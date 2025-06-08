@@ -1,7 +1,11 @@
 /* Place custom css here */
 
-.icon-sm svg {
+.icon-m svg {
   width: 1.5em;
   height: 1.5em;
 }
-/* to use, place {{< icon name="github" >}} in .md file*/
+
+.icon-s svg {
+  width: 1em;
+  height: 1em;
+}
