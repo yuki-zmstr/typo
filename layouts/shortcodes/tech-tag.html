@@ -1,0 +1,9 @@
+<span class="tech-tag">
+  {{ .Get "name" }}
+  {{- $icon := .Get "icon" -}}
+  {{ with $icon }}
+    <span class="icon-s">
+      {{- partial "svg.html" (dict "name" $icon) -}}
+    </span>
+  {{ end }}
+</span>
