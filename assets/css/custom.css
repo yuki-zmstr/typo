@@ -41,3 +41,7 @@ th:not(:last-child),
 td:not(:last-child) {
   border-right: 1px solid var(--code-border);
 }
+
+img {
+  margin: auto;
+}
