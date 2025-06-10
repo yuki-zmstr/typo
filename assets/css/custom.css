@@ -19,4 +19,25 @@
   border-radius: 0.5rem;
   font-size: 0.875rem;
   margin: 0.125rem;
+  text-decoration: none;
+}
+
+table {
+  table-layout: fixed; /* New */
+  width: 100%;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 30%; /* Adjust as needed */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 70%; /* Or any value */
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid var(--code-border);
 }

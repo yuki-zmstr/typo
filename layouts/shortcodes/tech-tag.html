@@ -1,9 +1,12 @@
-<span class="tech-tag">
-  {{ .Get "name" }}
-  {{- $icon := .Get "icon" -}}
+{{ $name := .Get "name" }}
+{{ $icon := .Get "icon" }}
+{{ $url := .Get "url" }}
+
+<a href="{{ $url | default "#" }}" class="tech-tag" target="_blank" rel="noopener noreferrer">
+  {{ $name }}
   {{ with $icon }}
     <span class="icon-s">
-      {{- partial "svg.html" (dict "name" $icon) -}}
+      {{ partial "svg.html" (dict "name" $icon) }}
     </span>
   {{ end }}
-</span>
+</a>
